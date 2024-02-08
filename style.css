@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#game-container {
+    display: none;
+}
+
+/* Animación para el título */
+@keyframes title-animation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Estilos para el menú */
+#menu-container {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: title-animation 2s infinite alternate;
+}
+
+/* Estilos para el título del menú */
+#menu-container h1 {
+    margin-top: 0;
+    cursor: pointer;
+}
+
+/* Animación para los botones */
+@keyframes button-animation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Estilos para los botones */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: button-animation 1s infinite alternate;
+}
+
+/* Estilos hover para los botones */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el contenedor de la pregunta */
+#question {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el campo de respuesta */
+#answer {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos para el botón de comprobar respuesta */
+#game-container button {
+    margin-top: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: button-animation 1s infinite alternate;
+}
+
+/* Estilos hover para el botón de comprobar respuesta */
+#game-container button:hover {
+    background-color: #218838;
+}
+
+/* Estilos para el mensaje de resultado */
+#result {
+    font-weight: bold;
+    margin-top: 10px;
+}
