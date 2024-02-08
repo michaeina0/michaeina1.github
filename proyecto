@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones Numéricas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu-container">
+        <h1>Operaciones Numéricas</h1>
+        <label for="difficulty">Selecciona la dificultad:</label>
+        <select id="difficulty">
+            <option value="easy">Fácil</option>
+            <option value="medium">Medio</option>
+            <option value="hard">Difícil</option>
+        </select>
+        <button onclick="startGame()">Empezar Juego</button>
+    </div>
+
+    <div id="game-container">
+        <h2 id="question"></h2>
+        <input type="text" id="answer">
+        <button onclick="checkAnswer()">Comprobar</button>
+        <p id="result"></p>
+    </div>
+
+    <audio id="correct-sound">
+        <source src="correct.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="incorrect-sound">
+        <source src="incorrect.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
